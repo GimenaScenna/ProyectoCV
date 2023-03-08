@@ -1,0 +1,40 @@
+
+body{
+    background-image: url("https://cutewallpaper.org/21/black-hd-background-wallpaper/Stunning-Solid-Black-Background-Wallpaper-images-For-Free-.jpg");
+}
+nav{
+    background-color: white;
+}
+/*Barra de navegación*/
+.menu{
+    list-style: none;
+    line-height: 42px;
+    padding-left: 1px;
+    width: 250px;
+}
+.menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.menu a i{
+    padding-right: 10px;
+}
+.menu li{
+    border-left:solid rgba(0, 0, 0, 0.695) 3px ;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    --webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.menu li:hover {
+    box-shadow: 250px 0 rgba(0, 0, 0, 0.2) inset;
+}
+.menu a:hover{
+    margin-left: 10px;
+    --webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
