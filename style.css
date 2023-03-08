@@ -1,10 +1,38 @@
 
 body{
     background-image: url("https://cutewallpaper.org/21/black-hd-background-wallpaper/Stunning-Solid-Black-Background-Wallpaper-images-For-Free-.jpg");
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Lora', serif;
+
+}
+
+div{
+    background-color: whitesmoke;
+    margin: 0px 150px 0px 150px;
+}
+/*Header*/
+
+.fotoperfil{
+    border-radius: 50%;
+    width: 250px;
+    height: auto;
+    float: left;
+    margin: 50px;
+}
+h1{
+    text-align: right;
+    padding: 150px 150px 140px 150px;
+    font-size: 40pt;
+    font-weight: 800;
+    margin: 0px 50px 0px 0px;
 }
 nav{
-    background-color: white;
+    width: 250px;
+    float: left;
+    padding: 20px 60px 20px 20px;
 }
+
 /*Barra de navegación*/
 .menu{
     list-style: none;
