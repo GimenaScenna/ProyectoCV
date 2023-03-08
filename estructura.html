@@ -7,45 +7,45 @@
     <title>Scenna Gimena CV</title>
     <script src="https://kit.fontawesome.com/6fd910de3a.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
-    <div>
+    <div class="container">
         <header class="Perfil">
             <img class="fotoperfil" src="Imagenes\IMG_20230101_031634_2.jpg" alt="Foto de perfil">
             <h1>Gimena R. Scenna</h1>
         </header>
     
+        <div class="tabs">
 
-        <section>
-            <nav>
-                <ul class="menu">
-                    <li><a id="boton1" href="#perfil"><i class="fa-solid fa-user"></i>Perfil</a></li>
-                    <li><a id="boton2" href="#FormacionAcademica"><i class="fa-solid fa-landmark"></i>Formación Académica</a></li>
-                    <li><a id="boton3" href="#HabilidadesRelevantes"><i class="fa-solid fa-chart-simple"></i>Habilidades Relevantes</a></li>
-                    <li><a id="boton4" href="#Experiencia"><i class="fa-solid fa-briefcase"></i>Experiencia</a></li>
-                    <li><a id="boton5" href="#Contacto"><i class="fa-solid fa-phone"></i>Contacto</a></li>
-                </ul>
-            </nav>
-        
-            <section class="secciones">
-
-                <p id="perfil">
-                    introdkjndkjd
-                </p>
+            <section>
+                <nav>
+                    <ul class="menu">
+                        <li><a id="boton1" class="nav-item" href="#perfil"><i class="fa-solid fa-user"></i><span>Perfil</span></a></li>
+                        <li><a id="boton2" class="nav-item" href="#FormacionAcademica"><i class="fa-solid fa-landmark"></i><span>Formación Académica</span></a></li>
+                        <li><a id="boton3" class="nav-item" href="#HabilidadesRelevantes"><i class="fa-solid fa-chart-simple"></i><span>Habilidades Relevantes</span></a></li>
+                        <li><a id="boton4" class="nav-item" href="#Experiencia"><i class="fa-solid fa-briefcase"></i><span>Experiencia</span></a></li>
+                        <li><a id="boton5" class="nav-item" href="#Contacto"><i class="fa-solid fa-phone"></i><span>Contacto</span></a></li>
+                    </ul>
+                </nav>    
+            </section>
     
-                <p id="FormacionAcademica">
+            <section class="secciones">
+    
+                <div id="perfil" class="tab-item active">
+                    introduccion - perfil
+                </div>
+    
+                <div id="FormacionAcademica" class="tab-item">
                         <h3>Formación Académica</h3>
                         <ul>
                             <li>Título secundario de Bachiller, egresada del Colegio N°1 "T. S. de Bustamante", 2017.</li>
                             <li>Ingeniería Química UNJu, en curso</li>
                         </ul>
-                </p>
+                </div>
     
-                <p id="HabilidadesRelevantes">
+                <div id="HabilidadesRelevantes"  class="tab-item">
                     <h3>Habilidades Releveantes</h3>
                     <ul>
                         <li>Habilidad para tareas que requieren pensamiento crítico.</li>
@@ -54,27 +54,27 @@
                         <li>Organización en el trabajo y manejo de datos.</li>
                         <li>Capacidad de aprendizaje rápido.</li>
                     </ul>
-                </p>
+                </div>
     
-                <p id="Experiencia">
+                <div id="Experiencia" class="tab-item">
                     <h3>Experiencia</h3>
                     <ul>
-                        <li>Trabajo de Data Entry para desarrollo web - Estilo Consultora</li>
+                        <li>Experiencia.......</li>
                     </ul>
-                </p>
+                </div>
         
-                <p id="Contacto">
+                <div id="Contacto" class="tab-item">
                     <h3>Contacto</h3>
                     <ul>
                         <li>Cel: 3884862044</li>
                         <li>mail: gimescenna@gmail.com</li>
                     </ul>
-                </p>
+                </div>
             </section>
-    
-        </section>
+        </div>
         
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="functions.js"></script>
 </body>
 </html>

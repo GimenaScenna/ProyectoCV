@@ -1,72 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 body{
     background-color: black;
-    margin: 0px 150px 0px 150px;
     font-family: 'Lora', serif;
+    height: 100vh;
 }
-div{
+.container{
     background-color: whitesmoke;
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
 }
 /*Header*/
 .Perfil{
-    position: absolut;
-    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid black;
 }
 .fotoperfil{
     border-radius: 50%;
     width: 230px;
     height: auto;
-    float: left;
-    margin: auto;
-    max-width: 90%;
-    padding: 30px 100px 30px 100px;
+    margin: 1em;
 }
 h1{
     text-align: center;
-    padding: 100px 140px 140px 140px;
-    font-size: 40pt;
+    padding: 0;
+    font-size: 60px;
     font-weight: 800;
     margin: 0px;
-    border-bottom: 3px solid black;
 }
 /*Fin header*/
 
 /*Section*/
+section{width: 100%;}
+
 /*Barra de navegación*/
 nav{
-    width: 250px;
-    float: left;
-    padding: 20px 60px 20px 20px;
-    margin-bottom: 100vh;
+    padding: 1em 2em;
 }
 .menu{
     list-style: none;
     line-height: 42px;
     padding-left: 1px;
-    width: 250px;
+    min-width: 250px;
 }
 .menu a {
     color: black;
     text-decoration: none;
     display: block;
     width: 100%;
-}
-.menu a i{
-    padding-right: 10px;
-}
-.menu li{
     border-left:solid rgba(0, 0, 0, 0.695) 3px ;
     padding-left: 20px;
     margin-bottom: 10px;
     --webkit-transition: all .4s;
-    -o-transition: all .4s;
+    -o-transition: all .4s; 
     transition: all .4s;
 }
-.menu li:hover {
-    box-shadow: 250px 0 rgba(0, 0, 0, 0.2) inset;
+.menu a i{
+    padding-right: 10px;
 }
-.menu a:hover{
+
+.menu a:hover, .menu a.active{
     margin-left: 10px;
+    box-shadow: 250px 0 rgba(0, 0, 0, 0.2) inset;
     --webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
@@ -75,5 +73,56 @@ nav{
 
 /*Secciones*/
 
+.tabs{
+    display: flex;
+    align-items: flex-start;
+}
+.tabs .secciones{
+    padding: 2em;
+}
 
+.tab-item{
+    display: none;
+}
 
+.tab-item.active{display: block;}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+    .Perfil{
+        display: block;
+        text-align: center;
+    }
+    .fotoperfil{
+        border-radius: 50%;
+        width: 230px;
+        height: auto;
+        margin: 1em;
+    }
+    .tabs{flex-direction: column;}
+    nav{
+        padding: 1em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .menu li{
+        display: block;
+        padding: 1em;
+    }
+    .menu li a{
+        border: none;
+        margin: 0;
+        padding: 0 .5em;
+        text-align: center;
+    }
+    .menu li a i{padding: 0;}
+    .menu li a span{display: none;}
+}
