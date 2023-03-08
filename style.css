@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 body{
-    background-color: black;
-    font-family: 'Lora', serif;
-    height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
 }
 .container{
     background-color: whitesmoke;
@@ -26,7 +24,7 @@ body{
 }
 h1{
     text-align: center;
-    padding: 0;
+    padding: 10px;
     font-size: 60px;
     font-weight: 800;
     margin: 0px;
@@ -34,7 +32,9 @@ h1{
 /*Fin header*/
 
 /*Section*/
-section{width: 100%;}
+section{
+    width: 100%;
+}
 
 /*Barra de navegación*/
 nav{
@@ -73,12 +73,16 @@ nav{
 
 /*Secciones*/
 
+p{
+    text-align: left;
+    border: 2em;
+}
 .tabs{
     display: flex;
     align-items: flex-start;
 }
 .tabs .secciones{
-    padding: 2em;
+    padding: 1em;
 }
 
 .tab-item{
@@ -87,9 +91,11 @@ nav{
 
 .tab-item.active{display: block;}
 
+/*Fin secciones*/ 
+
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px){
+  and (min-device-width: 279px) 
+  and (max-device-width: 911px){
     .Perfil{
         display: block;
         text-align: center;
@@ -122,7 +128,17 @@ nav{
         margin: 0;
         padding: 0 .5em;
         text-align: center;
+        margin-bottom: 10px;
+        --webkit-transition: all .4s;
+        -o-transition: all .4s; 
+        transition: all .4s;
     }
     .menu li a i{padding: 0;}
     .menu li a span{display: none;}
+
+    .tabs .secciones{
+        padding: 1em;
+        width: auto;
+    }
 }
+

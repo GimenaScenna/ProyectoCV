@@ -1,3 +1,5 @@
+//Selección de un nav-item, activación del link correspondiente//
+
 $(document).ready(function(){
     $('.nav-item').on('click', function(e){
         e.preventDefault();
