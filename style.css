@@ -7,7 +7,7 @@ body{
     max-width: 1100px;
     position: relative;
     margin: 0 auto;
-    line-height: 25px;
+    /*line-height: 25px;*/
 }
 /*Header*/
 .Perfil{
@@ -83,6 +83,7 @@ p{
 }
 .tabs .secciones{
     padding: 1em;
+    line-height: 25px;
 }
 
 .tab-item{
